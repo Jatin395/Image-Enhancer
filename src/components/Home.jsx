@@ -29,7 +29,7 @@ function Home() {
             const response = await axios.post(`${BASE_URL}/api/tasks/visual/scale`, formData, {
                 headers: {
                     'Content-Type': "multipart/form-data",
-                    'X-API-KEY': "wx0d7haby7idfua05"
+                    'X-API-KEY': ""
                 }
             });
             if (response.status === 200) {
@@ -50,7 +50,7 @@ function Home() {
     const EnhanceImage = async (taskid) => {
         const response = await axios.get(`${BASE_URL}/api/tasks/visual/scale/${taskid}`, {
             headers: {
-                "X-API-KEY": "wx0d7haby7idfua05"
+                "X-API-KEY": ""
             }
         });
         if (response.status === 200) {
